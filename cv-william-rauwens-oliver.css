@@ -1,0 +1,244 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #cac7c7;
+    text-align: center; /* Centre tout le contenu horizontalement */
+    background: linear-gradient(to right, #04066d, #5f5d5d);
+}
+/* Réinitialisation des styles par défaut */
+/* ... (Votre CSS existant) ... */
+
+/* CSS pour les balises <section> contenant les vidéos */
+.video-section {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video-section h2 {
+    color: #0073e6;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.video-section video,
+.video-section iframe {
+    width: 100%;
+    height: 150;
+}
+
+
+header {
+    background: linear-gradient(to right, #15024b, #5f5d5d); /* Dégradé de couleurs en arrière-plan */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ffffff, #0313a8); /* Dégradé de couleurs en arrière-plan */
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 5px 2px 4px rgba(255, 255, 255, 0.2);
+    animation: glitch 2s infinite;
+}
+/* ... Autres styles CSS ... */
+
+/* Style pour la navigation (nav) */
+nav {
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    background: linear-gradient(to right, #15024b, #5f5d5d);
+    padding: 10px 0;
+}
+
+/* Style pour chaque élément de navigation (li) */
+nav li {
+    list-style: none;
+    margin: 0 10px; /* Espacement entre les éléments de navigation */
+}
+
+nav a {
+    text-decoration: none;
+    color: #725bb3;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+@keyframes glitch {
+    50%, 20%, 70% {
+        transform: translate(2px, 0) skew(0deg); /* Déplacement horizontal léger */
+    }
+    62%, 92% {
+        transform: translate(-2px, 0) skew(0deg); /* Déplacement horizontal léger dans l'autre sens */
+    }
+}
+
+section {
+    background: linear-gradient(to right, #080147, #5f5d5d); /* Dégradé de couleurs en arrière-plan */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+/* Effet de survol sur la section : Lorsque la section est survolée par la souris, elle est agrandie légèrement, une ombre est ajoutée et la couleur de fond change. */
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    background-color: #f4f4f4;
+}
+/* Style de base pour les sections : Les sections ont un fond blanc (#fff), une marge autour d'elles, un rembourrage interne de 20px, un bord arrondi de 10px, une légère ombre et un curseur en forme de main au survol. De plus, elles ont une transition pour adoucir les effets de transformation et d'ombre au cours du temps. */
+section {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: scale(1.05) rotate(2deg); /* Zoom et rotation au survol */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Style pour les titres de niveau 2 (h2) : Les titres sont colorés en bleu (#0073e6), avec une taille de police de 28px et une marge inférieure de 10px pour l'espacement. Un dégradé de couleur est appliqué au texte en utilisant l'effet "background-clip: text" qui le rend transparent, tout en appliquant une ombre de texte pour le démarquer du fond. */
+h2 {
+    color: #0073e6;
+    font-size: 28px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #ffffff, #0f0191); /* Dégradé de couleur pour le titre */
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Style de base pour les listes non ordonnées (ul) : On supprime les puces (list-style-type) et le rembourrage (padding) par défaut, tout en espaçant légèrement les éléments de la liste (li) pour une meilleure lisibilité. Les liens (a) sont colorés en bleu (#0073e6), ont la décoration de lien supprimée (text-decoration) et une transition rapide pour changer de couleur au survol. */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #0057b5;
+}
+
+/* ... Autres styles CSS ... */
+
+/* Encadrement de la section "Mes compétences" */
+section.skills {
+    border: 2px solid #0073e6;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 50px;
+}
+/* Styles pour les barres de progression */
+/* Styles pour les barres de progression */
+/* Styles pour les barres de progression */
+progress {
+    width: 50%;
+    height: 20px;
+    border: 1px solid #0073e6;
+    border-radius: 50px;
+}
+
+/* Couleur de fond de la barre de progression */
+progress::-webkit-progress-bar {
+    background-color: #fff;
+}
+
+/* Couleur de remplissage de la barre de progression */
+progress::-webkit-progress-value {
+    background-color: #0073e6;
+    width: 0;
+    transition: width 2s ease-in-out; /* Animation de la largeur */
+}
+
+/* Styles pour les barres de progression */
+progress {
+    width: 50%;
+    height: 20px;
+    border: 1px solid #0073e6;
+    border-radius: 50px;
+    animation: fillProgress 1s linear forwards; /* Animation de 5 secondes */
+}
+
+/* Couleur de fond de la barre de progression */
+progress::-webkit-progress-bar {
+    background-color: #fff;
+}
+
+/* Animation de remplissage de la barre de progression */
+@keyframes fillProgress {
+    from {
+        width: 0; /* Barre vide au début de l'animation */
+    }
+    to {
+        width: 50%; /* Barre remplie à 50% à la fin de l'animation */
+    }
+}
+
+
+/* Style pour les liens "Mon profil GitHub" et "Mon PDF" */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073e6; /* Bleu */
+    color: #fff; /* Texte blanc */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+a.button:hover {
+    background-color: #0057b5; /* Bleu plus sombre au survol */
+}
+
+/* Ajout d'un espace entre les deux boutons */²²
+a.button + a.button {
+    margin-left: 10px;
+}
+
+/* Animation pour les éléments de texte */
+.text-decoration {
+    animation: pulse 1s infinite alternate; /* Applique l'animation "pulse" en boucle alternée */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        color: #b8b9bd; /* Couleur de départ */
+    }
+    100% {
+        transform: scale(1.05);
+        color: #343536; /* Couleur à la fin */
+    }
