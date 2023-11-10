@@ -232,7 +232,6 @@ a.button + a.button {
 .text-decoration {
     animation: pulse 1s infinite alternate; /* Applique l'animation "pulse" en boucle alternée */
 }
-
 @keyframes pulse {
     0% {
         transform: scale(1);
